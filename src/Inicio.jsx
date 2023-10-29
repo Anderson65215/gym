@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Inicio() {
     return (
         <div>
@@ -8,8 +10,8 @@ function Inicio() {
                     </div>
                     <div class="contenedor-botones">
                         
-                        <button class="mr-3 rounded-full border border-black px-2 py-2 transition font-medium hover:border-purple-700  hover:bg-purple-700 hover:text-white ">Iniciar sesion</button>
-                        <button class="mr-6 rounded-full border  border-black px-2 py-2 transition font-medium hover:border-purple-700  hover:bg-purple-700 hover:text-white">Registrarse</button>
+                        <Link to="/Login"><button  class="mr-3 rounded-full border border-black px-2 py-2 transition font-medium hover:border-purple-700  hover:bg-purple-700 hover:text-white ">Iniciar sesion</button></Link>
+                        <Link to="/Login"><button class="mr-6 rounded-full border  border-black px-2 py-2 transition font-medium hover:border-purple-700  hover:bg-purple-700 hover:text-white">Registrarse</button></Link>
                     </div>
                 </nav>
             </header>
